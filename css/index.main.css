@@ -1,0 +1,94 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    
+
+
+}
+
+body{
+    background-image:url('../images/lakeAndForest.jpg');
+    background-size: cover;  
+    
+}
+
+
+.list{
+    width: 600px;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 2%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    visibility: hidden;
+}
+
+.list ul{
+    
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-bottom: 0.5px solid coral;
+    padding: 3%;
+    
+    
+}
+
+.list a{
+    text-decoration: none;
+    color: coral;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    outline: none;
+}
+
+#menu{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 8em;
+    height: 2em;
+    justify-content: center;
+    align-content: center;
+    background-color: coral;
+    border-radius: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    opacity: 0.8;
+   
+}
+
+.welcome{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    color: coral;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size:1.5em;
+    
+}
+
+#copyRights{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: dimgray;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+#menu:hover{
+    background-color: black;
+    opacity: 0.8;
+}
+
+.list a:hover{
+    color: #DDD1FF;
+}
+
+

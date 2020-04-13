@@ -1,0 +1,74 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+background-image: url('../images/yellowLeaf.jpg');
+}
+
+.wrapper{
+    width: 600px;
+    margin: 5% auto;
+    background-color:black;
+    opacity: 0.8;
+    border-radius: 2%;
+}
+
+.parent{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+
+.parent th{
+    color: coral;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding-top: 5%;
+
+}
+
+.parent td{
+    border-bottom: 1px solid #0078d8;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#0078d8;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 2em;
+}
+
+.wrapper h2{
+    color: coral;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+#copyRights{
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    margin-top: 8%;
+    padding-bottom: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: dimgray;
+}
+
+#home{
+    margin-top: 1%;
+    margin-left: 1%;
+}
+#home:hover{
+    background-color: coral;
+    border-color: #DDD1FF;
+    border-radius: 8%;
+
+}

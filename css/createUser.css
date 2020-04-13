@@ -1,0 +1,88 @@
+*{
+    padding: 0%;
+    margin: 0%;
+
+}
+body {
+
+background-image: url('../images/pinkFlowers.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.wrapper{
+    width: 600px;
+    margin:0% auto;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 2%;
+}
+
+.parent{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.parent input{
+    margin-top: 4%;
+    width: 300px;
+    height: 2em;
+    text-align: center;
+}
+
+.parent button{
+    margin-top: 4%;
+    width: 14em;
+    height: 4em;
+    margin-bottom: 4%;
+    font-weight: bold;
+}
+
+.parent p{
+    margin-top: 4%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: coral;
+}
+
+#copyRights{
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    margin-top: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: dimgray;
+}
+
+#home{
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.parent input:hover{
+    background-color: #DDD1FF;
+    border-color: coral;
+    border-radius: 2%;
+
+}
+
+.parent button:hover{
+    background-color: coral;
+    border-color: #DDD1FF;
+    border-radius: 2%;
+
+}
+
+#home:hover{
+    background-color: coral;
+    border-color: #DDD1FF;
+    border-radius: 8%;
+
+}
+
+
+
+
+

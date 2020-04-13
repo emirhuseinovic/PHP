@@ -1,0 +1,94 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-image: url('../images/sunsetFlowers.jpg');
+    background-size: cover;
+}
+
+.wrapper{
+    margin: 5% auto;
+    width: 600px;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 2%;
+}
+
+.parent{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:center;
+    align-items: center;
+}
+
+.parent input{
+    width: 300px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 2.5em;
+    background-color: #DDD1FF;
+    border-radius: 3%;
+    
+    
+}
+
+.parent button{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #DDD1FF;
+    height: 4em;
+    width: 13em;
+    border-radius: 3%;
+    font-weight: bold;
+
+}
+
+.parent p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: coral;
+    margin-top: 5%;
+    font-size: 1.5em;
+}
+
+#copyRights{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 11%;
+    color: dimgrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    outline: none;
+}
+
+
+.parent input:hover{
+    background-color: #DDD1FF;
+    border-color: coral;
+    border-radius: 2%;
+}
+
+.parent button:hover{
+    border-color:#DDD1FF ;
+    background-color: coral;
+}
+
+#home{
+    margin-top: 1%;
+    margin-left: 1%;
+    
+}
+
+#home:hover{
+    background-color: coral;
+    border-color: #DDD1FF;
+    border-radius: 8%;
+
+}

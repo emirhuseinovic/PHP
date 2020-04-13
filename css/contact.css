@@ -1,0 +1,75 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-image: url('../images/sunsetBranch.jpg');
+    background-size: cover;
+}
+.wrapper{
+    width: 600px;
+    margin: 5% auto;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 2%;
+}
+
+.parent{
+    display: flex;
+    flex-flow: column wrap;
+    align-items:center;
+    
+    
+   
+}
+
+.parent p{
+    color: coral;
+    margin-top: 6%;
+    margin-bottom: 15%;
+    width: 300px;
+    border-bottom:0.5px solid coral;
+    padding-bottom: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.parent h1{
+    color: coral;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 400px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.parent a{
+    text-decoration: none;
+    outline: none;
+}
+
+#copyRights{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 8%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: dimgray;
+}
+
+.parent p:hover{
+    color: #DDD1FF;
+}
+
+#home{
+    margin-top: 1%;
+    margin-left: 1%;
+}
+#home:hover{
+    background-color: coral;
+    border-color: #DDD1FF;
+    border-radius: 8%;
+
+}
+
