@@ -66,7 +66,8 @@
             }else if (data!=" "){
                 $.post( "classes/createUserEntry.class.php", {namef: name, surnamef: surname, emailf: email, usernamef: username, passwordf: password}, function(data){
                     
-                    window.top.location='results.php';
+                    window.top.location='login.php';
+                   
                 });
                 
                 

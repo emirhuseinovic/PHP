@@ -1,12 +1,33 @@
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+session_start(); // starting session
 
+?>
 <!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" href="css/contact.css" >
 <meta charset="UTF-8">
+<script src="jquery/jquery.min.js"></script>
 </head>
 <body>
 <a href="index.main.html"><img src="images/home2.png" id="home"></a>
+<div class="log">
+<p>
+<?php
+if(isset($_SESSION['username'])){ // checking if seesion variable has value
+  echo "Dobrodošli ".$_SESSION['username']; // printing welcome message
+}else{
+  echo "Morate se ulogovati";
+}
+
+?>
+</p>
+
+
+</div>
 <div class="wrapper">
   <div class="parent">
     <h1>Za tehničku podršku aplikaciji obratiti se</h1>
@@ -24,7 +45,10 @@
 
 
 
-
+<script src="js/sessions.js">
+           
+          
+</script>   
 
 </body>
 </html>

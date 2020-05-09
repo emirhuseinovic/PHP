@@ -3,11 +3,15 @@ ini_set('display_errors', 1);
 ini_set('display-startup_errors', 1);
 error_reporting('E_ALL');
 include 'connectionHandler.class.php';
-class LoginAndCreateUser extends ConnectionHandler{
+
+
+
+class LoginAndCreateUser extends ConnectionHandler  {
 
 //private $bool=true;
 public $username;
 public $password;
+
 
 public function loginValidation(){
     if(isset($_POST['usernameF'])){
@@ -30,14 +34,40 @@ public function loginValidation(){
             while($row=$statement->fetch()){
                 if($row['username']==$this->username){
                     if($row['password']==$this->password){
+                        
+                        
+                        //setting up session
+                        function sessionData($username){
+                            session_start(); // starting session
+                            $_SESSION['username']=$username;
+                            
+                        }
+                        sessionData($this->username);
+                        
+                        
+                        
+
+
+
+
                        echo "succes";
+                       
+                     
+                     
+                      
+                       
+                     
+
+
                        
                     }
                 }else{
                     echo "failure";
                     
                 }
+               
             }
+           
        
 
      
@@ -52,6 +82,12 @@ public function loginValidation(){
         
 
 }
+
+                     
+                       
+
+
+
 }
     
     
@@ -62,3 +98,4 @@ public function loginValidation(){
 
 $obj=new LoginAndCreateUser();
 $obj->loginValidation();
+

@@ -3,7 +3,8 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-class ConnectionHandler{
+
+class ConnectionHandler {
 private $host="localhost";
 private $userName="admin";
 private $password="";
@@ -23,4 +24,12 @@ public function connect($databaseName){
     }
     $pdo="null";
 }
+
+
+
+
+
+
+
+
 }

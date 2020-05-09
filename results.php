@@ -3,6 +3,12 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 //include 'classes/resultsHandler.class.php';
+session_start(); // starting session
+
+
+
+
+
 
 ?>
 <!DOCTYPE html>
@@ -17,8 +23,25 @@ error_reporting(E_ALL);
 </head>
 <body>
 <a href="index.main.html"><img src="images/home2.png" id="home"></a>
-<div class="wrapper">
 
+<div class="log">
+<p>
+<?php
+if(isset($_SESSION['username'])){ // checking if seesion variable has value
+  echo "Dobrodošli ".$_SESSION['username']; // printing welcome message
+}else{
+  echo "Morate se ulogovati";
+}
+
+?>
+</p>
+<button id="logButton">
+  Logout
+</button>
+
+</div>
+
+<div class="wrapper">
 
 
 
@@ -139,7 +162,10 @@ error_reporting(E_ALL);
             
 
         
-       
+        <script src="js/sessions.js">
+           
+          
+           </script>     
     
     
 </body>
